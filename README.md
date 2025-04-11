@@ -1,130 +1,157 @@
-Restaurant Management System - Java
-Overview
-A desktop application built with Java for managing restaurant operations including tables, orders, menu items, and staff. 
-Technologies Used
-Core Stack
-Java: Primary programming language 
+# 🍽️ Restaurant Management System - Java
 
-PostgreSql: Database backend
+---
 
-JDBC: For database connectivity
+## 📖 Overview
 
-Supporting Libraries
-For date/time operations
+A **desktop application** built with Java for managing restaurant operations including:
 
-For utility functions
+- Tables
+- Orders
+- Menu Items
+- Staff
 
-For input validation
+The project was developed to practice Java backend development with database integration and business logic design.
 
-Key Features
-1. Table Management
-View all restaurant tables and their status (Vacant/Occupied)
+---
 
-Assign customers to tables
+## 🧰 Technologies Used
 
-Clear tables after service
+### 🔹 Core Stack
+- **Java 17** – Primary programming language  
+- **Spring Boot** – Backend framework  
+- **Spring Security (JWT)** – Authentication and authorization  
+- **PostgreSQL** – Relational database  
+- **JDBC / Spring Data JPA** – Database access and ORM  
+- **Maven** – Build & dependency management  
 
-2. Order Processing
-Create new orders linked to tables
+### 🔸 Supporting Libraries & Tools
+- **Lombok** – Reduces boilerplate code  
+- **ModelMapper** – DTO ↔ Entity mapping  
+- **Javax Validation API** – Input validation  
+- **SLF4J / Logback** – Logging  
+- **Java Time API** – Date & time operations  
+- **Spring Cloud / AWS SDK** *(planned)* – Cloud storage & file handling (e.g. images)
 
-Add/remove items from orders
+---
 
-Modify quantities
+## 🌟 Key Features
 
-View order details
+### 1️⃣ Table Management
+- View all restaurant tables and their status _(Vacant / Occupied)_
+- Assign customers to tables  
+- Clear tables after service  
 
-Print order receipts
+### 2️⃣ Order Processing
+- Create new orders linked to tables  
+- Add / remove items from orders  
+- Modify item quantities  
+- View order details  
+- **🧾 Print order receipts**
 
-3. Menu Management
-Browse menu by categories
+### 3️⃣ Menu Management
+- Browse menu by categories  
+- Add new menu items  
+- Update existing items  
+- Categorize items _(Food, Drinks, etc.)_
 
-Add new menu items
+### 4️⃣ Staff Management
+- Add new staff members  
+- View staff list  
+- Assign roles _(Waiter, Manager, etc.)_  
+- Manage basic staff information  
 
-Update existing items
+---
 
-Categorize items (Food, Drinks, etc.)
+## 🗃️ Database Structure
 
-4. Staff Management
-Add new staff members
+| Table Name     | Description                        |
+|----------------|------------------------------------|
+| `users`        | Staff accounts and credentials     |
+| `menu_items`   | Available food/drink items         |
+| `orders`       | Customer orders                    |
+| `order_items`  | Items within each order            |
+| `tables`       | Restaurant table information       |
 
-View staff list
+---
 
-Assign roles (Waiter, Manager, etc.)
+## 🔐 Login Screen
 
-Basic staff information management
+- Secure login for staff members  
+- **Role-based access control** for different staff types (e.g., Manager vs Waiter)
 
+---
 
-Database Structure
-Database contains these main tables:
+## 🧭 Main Dashboard
 
-users - Staff accounts and credentials
+- Quick access to all system features  
+- Status overview of:
+  - Active orders  
+  - Table occupancy  
 
-menu_items - All available food/drink items
+---
 
-orders - Customer orders
+## 🪑 Table Management Screen
 
-order_items - Items within each order
+- Visual layout of restaurant tables  
+- **Color-coded** indicators for Vacant/Occupied  
+- Table assignment and clearing options  
 
-tables - Restaurant tables
+---
 
-Login Screen
-Authentication for staff members
+## 🧾 Order Screen
 
-Role-based access control
+- Create and modify customer orders  
+- Search and add items from menu  
+- Calculate totals, taxes, and generate receipts  
 
-Main Dashboard
-Quick access to all system functions
+---
 
-Status overview of tables and orders
+## 🧆 Menu Management
 
-Table Management Screen
-Visual representation of tables
+- Add/edit/delete menu items  
+- Set prices, categories, and availability  
+- Organize by type (e.g., Starters, Drinks, Mains)
 
-Color-coded status indicators
+---
 
-Table assignment functionality
+## ⚙️ How the System Works
 
-Order Screen
-Create and modify orders
+1. Staff logs in with credentials  
+2. System verifies role and grants access  
+3. Depending on access level, staff can:
+   - Manage tables and customers
+   - Create and update orders
+   - Add menu items
+   - Process payments
 
-Search/add menu items
+---
 
-Calculate totals
+## 🧠 Business Logic Highlights
 
-Print receipts
+> 🎯 These backend mechanics ensure smooth operations:
 
-Menu Management
-Add/edit/delete menu items
+- Real-time table status tracking  
+- Role-based function access  
+- Order total calculation with tax handling  
+- Receipt generation with restaurant branding  
+- Clean separation of concerns with layered architecture  
 
-Set prices and categories
+---
 
-Update availability
+## ✅ Future Plans
 
-How the System Works
-Staff logs in with their credentials
+- Image upload to cloud for menu items (e.g. AWS S3)  
+- Reporting module for daily sales summary  
+- Email notifications and staff scheduling features  
 
-System checks role and grants appropriate access
+---
 
-Staff can:
+## 🤝 Contributions
 
-View and manage tables
+This is a solo learning project, but suggestions and improvements are welcome!  
+Feel free to fork or raise an issue.
 
-Create new orders for customers
+---
 
-Add items to orders from the menu
-
-Process payments
-
-Manage menu items
-
-Business Logic Highlights
-Order calculation with proper tax handling
-
-Table status tracking in real-time
-
-Receipt generation with restaurant branding
-
-
-
-
-
+Made with ☕ & code by **[Nurlan](https://github.com/nurlanlan)**
