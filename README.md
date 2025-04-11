@@ -1,3 +1,4 @@
+
 # 🍽️ Restaurant Management System - Java
 
 ---
@@ -153,5 +154,8 @@ This is a solo learning project, but suggestions and improvements are welcome!
 Feel free to fork or raise an issue.
 
 ---
+![Screenshot 2025-04-11 193206](https://github.com/user-attachments/assets/68723430-2e0f-47c2-899e-cd993805d02a)
+![Screenshot 2025-04-11 193149](https://github.com/user-attachments/assets/76ecdae7-1c6b-41f3-84f7-9c7ad23f6634)
+![Screenshot 2025-04-11 193118](https://github.com/user-attachments/assets/bee0be72-1715-4f0f-bcdc-09483256663d)
 
 Made with ☕ & code by **[Nurlan](https://github.com/nurlanlan)**
