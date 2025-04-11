@@ -52,7 +52,7 @@ public class OrderService {
         order.setWaiter(waiter);
         order.setOrderTime(LocalDateTime.now());
         order.setStatus(orderRequest.getStatus());
-        order.setTotalPrice(BigDecimal.ZERO); // Will calculate after adding items
+        order.setTotalPrice(BigDecimal.ZERO);
 
         Order savedOrder = orderRepository.save(order);
 
