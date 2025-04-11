@@ -21,7 +21,7 @@ public class Order {
     private Long id;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "table_id", nullable = false)
+    @JoinColumn(name = "table_id",unique = true, nullable = false)
     private RestaurantTable table;
 
     @ManyToOne(fetch = FetchType.EAGER)
