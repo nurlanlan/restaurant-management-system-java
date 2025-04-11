@@ -23,11 +23,11 @@ import java.util.stream.Collectors;
 @Slf4j
 public class JwtTokenProvider {
 
-    @Value("${security.jwt.token.secret-key:secret-key}")
+    @Value("${jwt.secret}")
     private String secretKey;
 
-    @Value("${security.jwt.token.expire-length:3600000}")
-    private long validityInMilliseconds = 3600000; // 1h
+    @Value("${jwt.expiration}")
+    private long validityInMilliseconds;
 
     private Key key;
 
