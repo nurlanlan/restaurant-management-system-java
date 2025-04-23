@@ -54,7 +54,7 @@ public class OrderService {
         order.setStatus(orderRequest.getStatus());
         order.setTotalPrice(BigDecimal.ZERO);
 
-        Order savedOrder = orderRepository.save(order);
+        Order savedOrder = orderRepository.save(order); 
 
         List<OrderItem> orderItems = new ArrayList<>();
         BigDecimal totalPrice = BigDecimal.ZERO;

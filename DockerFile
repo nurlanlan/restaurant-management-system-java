@@ -1,0 +1,14 @@
+# Use official Java 17 image
+FROM eclipse-temurin:17-jdk
+
+# Set working directory
+WORKDIR /app
+
+# Copy pom.xml and source files
+COPY . .
+
+# Package the application
+RUN ./mvnw clean package -DskipTests
+
+# Run the app
+CMD ["java", "-jar", "target/*.jar"]

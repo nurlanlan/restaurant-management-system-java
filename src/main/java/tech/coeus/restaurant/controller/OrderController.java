@@ -57,13 +57,13 @@ public class OrderController {
         return ResponseEntity.ok(orderService.updateOrderStatus(id, status));
     }
 
-    @PutMapping("/{id}")
-    @PreAuthorize("hasAnyRole('ADMIN', 'MANAGER', 'WAITER')")
-    public ResponseEntity<OrderResponse> updateOrder(
-            @PathVariable Long id,
-            @Valid @RequestBody OrderRequest orderRequest) {
-        return ResponseEntity.ok(orderService.updateOrder(id, orderRequest));
-    }
+//    @PutMapping("/{id}")
+//    @PreAuthorize("hasAnyRole('ADMIN', 'MANAGER', 'WAITER')")
+//    public ResponseEntity<OrderResponse> updateOrder(
+//            @PathVariable Long id,
+//            @Valid @RequestBody OrderRequest orderRequest) {
+//        return ResponseEntity.ok(orderService.updateOrder(id, orderRequest));
+//    }
 
     @DeleteMapping("/{id}")
     @PreAuthorize("hasRole('ADMIN') or hasRole('MANAGER')")
