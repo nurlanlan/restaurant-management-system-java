@@ -9,5 +9,5 @@ RUN mvn clean package
 FROM eclipse-temurin:17-jre
 WORKDIR /app
 COPY --from=builder /app/target/your-app.jar ./app.jar
-EXPOSE 8080
+EXPOSE 9092
 CMD ["java", "-jar", "app.jar"]
