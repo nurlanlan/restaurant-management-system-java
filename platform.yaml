@@ -1,0 +1,5 @@
+platform:
+  aws:elasticbeanstalk:environment:
+    EnvironmentType: SingleInstance
+  aws:elasticbeanstalk:environment:proxy:
+    ProxyServer: nginx
