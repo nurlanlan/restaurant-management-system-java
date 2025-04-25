@@ -2,6 +2,7 @@
 # 🍽️ Restaurant Management System - Java
 
 ---
+You can review endpoints from the Following link: http://restauran-manage-app-env.eba-vgpfpeda.eu-north-1.elasticbeanstalk.com/swagger-ui/index.html#/
 
 ## 📖 Overview
 
